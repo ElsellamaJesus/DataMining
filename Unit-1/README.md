@@ -1,1 +1,3 @@
-### Practices
+## Practices
+---
+### Practice 1
