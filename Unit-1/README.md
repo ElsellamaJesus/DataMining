@@ -123,5 +123,62 @@ The escape sequence "\ n" produces a new line and prevents the next program exit
     z <- 1:20
     min (z)
 
+##### 11. mean (x)
+    Shows the average of the data in a vector.
+##### Example:
+    z <- 1:20
+    mean (z)
+
+##### 12. head (x)
+    Shows the first three data of a field or vector.
+##### Example:
+    z <- 1:20
+    head (z)
+
+##### 13. tail (x)
+    Shows the last three data of a field or vector.
+##### Example:
+    z <- 1:20
+    tail (z)
+
+##### 14. matrix (x: y)
+    Create a one-dimensional matrix, the "x" marks the beginning and the "y" the end of the range.
+##### Example:
+    x <- matrix (4:10)
+    x
+
+##### 15. matrix (a: b, ncol = x, nrow = x)
+    Create a two-dimensional array, a and b mark a range of data and the ncol and nrow commands, columns and rows respectively.
+
+##### Example:
+    x <- matrix (1: 9, ncol = 3, nrow = 3)
+    x 
+
+##### 16. dim (x)
+    Command to see the dimension of an array.
+
+##### 17. is.matrix (x)
+    Returns a Boolean value TRUE or FALSE if it is an array or is not.
+
+##### 18. colnames (x) = c ("data", "data", ...)
+    Command to rename the columns of a vector.
+
+##### Example:
+    colnames (x) = c ("Age", "Weight", "Height")
+
+##### 19. rownames (x) = c ("data", "data", ...)
+    Command to rename the columns of a vector.
+##### Example:
+    rownames (x) = c ("Jesus", "Rodrigo", "Angel")
+
+##### 20. Applies a function to an array, list or vector that is passed as a parameter.
+    Argument x: matrix, list or vector.
+    Argument and: "1" to operate on the columns and "2" to operate on the rows.
+    Argument z: Operator that is applied on rows or columns, according to the argument y.
+##### Example:
+    apply (x, 1, sum)
+    apply (x, 2, sum)
+
+
 
         
