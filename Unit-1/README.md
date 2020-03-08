@@ -66,9 +66,9 @@ Practice find 20 more functions in R and make an example of it.
     t <- c ("one", "two", "three")
     x; t
 
-2.  names (x) <- value
+##### 2.  names (x) <- value
     Allows you to assign names to the elements of a variable.
-    ##### Example:
+    Example:
     n <- c (2,4,6) # Assigns three values ​​to the variable x
     names (n) <- c ("I", "II", "III") # Assigns names to the three previous values
     n
