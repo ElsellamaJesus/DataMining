@@ -303,9 +303,9 @@ Kirill Eremenko
 #### www.superdatascience.com
 
 #### Copyright: These datasets were prepared using publicly available data.
-           However, theses scripts are subject to Copyright Laws. 
-           If you wish to use these R scripts outside of the R Programming Course
-           by Kirill Eremenko, you may do so by referencing www.superdatascience.com in your work.
+However, theses scripts are subject to Copyright Laws. 
+If you wish to use these R scripts outside of the R Programming Course
+by Kirill Eremenko, you may do so by referencing www.superdatascience.com in your work.
 
 #### Comments:
 Seasons are labeled based on the first year in the season
@@ -319,17 +319,16 @@ Derrick Rose: 2007 - College Data Used
 Derrick Rose: 2006 - Proxied With 2007 Data
 Derrick Rose: 2005 - Proxied With 2007 Data
 
-# You have been supplied data for two more additional in-game statistics:
-
- You need to create three plots that portray the following insights:
+##### You have been supplied data for two more additional in-game statistics:
+You need to create three plots that portray the following insights:
  * Free Throw Attempts per game
  * Accurancy of Free Throws
  * Player playing style (2 vs 3 points preference) excluding Free Throws
 
  - Each Free Throw is worth 1 point
 
- The data has been supplied in the form of vectors. You will have to create
- two matrices before you proceed with the analysis.
+The data has been supplied in the form of vectors. You will have to create
+two matrices before you proceed with the analysis.
 
 #### Seasons
     Seasons <- c("2005","2006","2007","2008","2009","2010","2011","2012","2013","2014")
@@ -419,7 +418,13 @@ Derrick Rose: 2005 - Proxied With 2007 Data
 
 ---
 ### Practice 5
+    
+*In this practice we use the data from "Demographic-Data.csv"*.
 
+#### Method: Select the file manually
+    ?read.csv()
+    stats <- read.csv(file.choose())
+    stats
 #### Filter countries by Low income 
 
     stats[stats$Income.Group == "Low income",] 
