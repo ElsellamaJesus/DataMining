@@ -60,15 +60,16 @@ Hint:
 ### Practice 2
 Practice find 20 more functions in R and make an example of it.
 
-##### 1.  c (a1, a2, ...) This function allows you to concatenate (join) objects: variables text, numbers, etc.
+##### 1.  c (a1, a2, ...) 
+##### This function allows you to concatenate (join) objects: variables text, numbers, etc.
 ##### Example:
     x <- c (1,2,3)
     t <- c ("one", "two", "three")
     x; t
 
-##### 2.  names (x) <- value
-    Allows you to assign names to the elements of a variable.
-    Example:
+##### 2.  names (x) <- value  
+##### Allows you to assign names to the elements of a variable.
+##### Example:
     n <- c (2,4,6) # Assigns three values ​​to the variable x
     names (n) <- c ("I", "II", "III") # Assigns names to the three previous values
     n
