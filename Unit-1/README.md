@@ -59,9 +59,9 @@ Hint:
 ---
 ### Practice 2
 Practice find 20 more functions in R and make an example of it.
-1.  c (a1, a2, ...)
-    This function allows you to concatenate (join) objects: variables, text, numbers, etc.
-    Example:
+##### 1.  c (a1, a2, ...)
+##### This function allows you to concatenate (join) objects: variables text, numbers, etc.
+##### Example:
 
     x <- c (1,2,3)
     t <- c ("one", "two", "three")
