@@ -9,20 +9,20 @@
  Check that Mean(Xn)->E(X) as you rerun your script while increasing N
 
 Hint:
-1. Initialize sample size
-2. Initialize counter
-3. loop for(i in rnorm(size))
-4. Check if the iterated variable falls
-5. Increase counter if the condition is true
-6. return a result <- counter / N
+##### 1. Initialize sample size
+##### 2. Initialize counter
+##### 3. loop for(i in rnorm(size))
+##### 4. Check if the iterated variable falls
+##### 5. Increase counter if the condition is true
+##### 6. return a result <- counter / N
 
 
 # 1.  Initialize sample size
-    ```R
+    
     x<-rnorm(50)
     y <- dnorm(x,mean = 0, sd = 1)
     plot(x,y)
-    ```
+    
 # 2. Initialize counter
     ```R
     count <- 0
