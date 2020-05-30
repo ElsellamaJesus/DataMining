@@ -244,6 +244,7 @@ Before we can use functions from a library or package that is not part of the R 
 #### Function to load external library
     > library(ElemStatLearn)
 It could give us an error message because it cannot find the ‘ElemStatLearn’ package. The reason is because we have not previously downloaded this library to our PC. So we will have to download it before we can load it.
+
     install.packages("ElemStatLearn")
 
 #### Some functions in ElemStatLearn
