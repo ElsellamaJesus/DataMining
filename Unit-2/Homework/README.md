@@ -283,4 +283,5 @@ All the information obtained must be grouped by pixels to generate reliable prop
 This method is very interesting, how it locates the 3D joints of the human body in real time, and all this from unique depth images, as it recognizes the body by parts. And since the entire training dataset is analyzed and predictions are created through the random decision forests.
 
 ---
-
+## Homework optional
+### <html><H3 align="center"> Update R </H3></html>
