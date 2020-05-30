@@ -42,6 +42,6 @@
     xlab('Partidos') +
     ylab('Minutos')
 ##### Dataset "Minutes per game in the season"
-![Image of Yaktocat](https://i.ibb.co/rcpp22h/dataset.png)
+<html><img align="center" src="https://www.example.com/images/dinosaur.jpg"></html>
 
 ---
