@@ -41,7 +41,13 @@
     ggtitle('Minutos vs Partidos (Test Set)') +
     xlab('Partidos') +
     ylab('Minutos')
-##### Dataset "Minutes per game in the season"
+#### Dataset "Minutes per game in the season"
 <html><div align="center"><img src="https://i.ibb.co/9sSbSkB/dataset.png"></div></html>
+
+#### Graphics
+<html><div align="center"><img src="https://i.ibb.co/WWNzJ5f/Minutes-Vs-Games.png"></div></html>
+**Observation:** It can be seen in the Training Set that there are 2 outliers, as for the others they remained in a range of 20 to 30 games with a time of between 1500 min and 2500 min played.
+<html><div align="center"><img src="https://i.ibb.co/2yY25LG/Minutes-Vs-Games-Test-Set.png"></div></html>
+**Observation:** It can be seen in the Training Set that there are 5 values at the beginning separated by approximately 5 games, maintaining an improvement between each player, but as for the others, there is a proximity between 25 to 30 games with a time of between 2000 min and 2500 min played.
 
 ---
