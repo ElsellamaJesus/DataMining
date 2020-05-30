@@ -271,6 +271,16 @@ Although the human body has a wide variety of poses that are difficult to simula
 <html><div align="center">
 <p><i>We can see how this process is done, in the first part we have the depth image, the second how the body parts are divided, and the third the 3D points of the body joints, where they are located to predict movements.</i><p>
 </div></html>
+The new system works at 200 frames per second or also called (frames per second) in consumer hardware. It has high precision.
+<html><div align="center"><img src="https://i.ibb.co/MRdgG48/depth-image2.png"></div></html>
+<html><div align="center">
+<p><i>In the image we can see how the body is analyzed by pixels, each image means something different that is analyzed, like the pixels by displacement.</i><p>
+</div></html>
+Interestingly, depth images employ depth comparison functions at a given pixel. Random decision forests are used to see what options a particular entry will have. Random decision forests are trees, which have their own nodes, which, as I mentioned, the nodes indicate the different paths that could be taken.
+<html><div align="center"><img src="https://i.ibb.co/10w5n2Q/tree.png"></div></html>
+All the information obtained must be grouped by pixels to generate reliable proposals for the positions of the 3D joints of the human body.
+
+This method is very interesting, how it locates the 3D joints of the human body in real time, and all this from unique depth images, as it recognizes the body by parts. And since the entire training dataset is analyzed and predictions are created through the random decision forests.
 
 ---
 
