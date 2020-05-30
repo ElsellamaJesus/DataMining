@@ -232,4 +232,9 @@ The function summary (i.e. summary.glm) can be used to obtain or print a summary
 
 The coefficients, effects, fitted values, and residuals of the generic access functions can be used to extract various useful characteristics from the value returned by glm.
 
-weights extracts a vector of weights, one for each case in the fit (after subset and na.action)
+weights extracts a vector of weights, one for each case in the fit (after subset and na.action).
+
+---
+## Homework 6
+### <html><H3 align="center"> ElemStatLearn Library </H3></html>
+
