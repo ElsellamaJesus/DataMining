@@ -237,4 +237,29 @@ weights extracts a vector of weights, one for each case in the fit (after subset
 ---
 ## Homework 6
 ### <html><H3 align="center"> ElemStatLearn Library </H3></html>
+It is a package that contains many data, functions and examples from the book "The Elements of
+Statistical Learning: Data Mining, Inference, and Prediction ”.
+Before we can use functions from a library or package that is not part of the R core, we have to load it.
+
+#### Function to load external library
+    > library(ElemStatLearn)
+It could give us an error message because it cannot find the ‘ElemStatLearn’ package. The reason is because we have not previously downloaded this library to our PC. So we will have to download it before we can load it.
+    install.packages("ElemStatLearn")
+
+#### Some functions in ElemStatLearn
+
+| Nombre |Descripción |
+| --- | --- |
+| waveform | Function to simulate waveform data |
+| phoneme | Data from a continuous acoustic-phonetic corpus |
+| prostate | Prostate Cancer Facts |
+| waveform.test | Simulated Waveform Data |
+| vowel.train | Vowel recognition (determining data) |
+| vowel.test | Vowel recognition (determining data) |
+| orange4.train | Simulated orange data |
+| zip.train | Handwritten digit recognition data |
+| zip2image | Function to convert zip file row to format used by image () |
+| ozone | Ozone data |
+
+
 
