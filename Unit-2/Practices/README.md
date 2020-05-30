@@ -21,8 +21,7 @@
                data = dataset)
     summary(regressor)
 ##### Predicting the Test set results
-y_pred = predict(regressor, newdata = test_set)
-
+    y_pred = predict(regressor, newdata = test_set)
 ##### Visualising the Training set results
     library(ggplot2)
     ggplot() +
@@ -42,4 +41,7 @@ y_pred = predict(regressor, newdata = test_set)
     ggtitle('Minutos vs Partidos (Test Set)') +
     xlab('Partidos') +
     ylab('Minutos')
+##### Dataset "Minutes per game in the season"
+![Image of Yaktocat](https://i.ibb.co/rcpp22h/dataset.png)
+
 ---
