@@ -1,7 +1,7 @@
 # Homework
 ---
 ## Homework 1
-### Geometric distribution
+### <html><H3 align="center"> Geometric distribution </H3></html>
 #### R functions dgeom, pgeom, qgeom y rgeom.
 The function R dgeom (x, prob) is the probability of x failures before the first success (observe the difference) when the probability of success is prob. The function R pgeom (q, prob, lower.tail) is the cumulative probability (lower.tail = TRUE for the left tail, lower.tail = FALSE for the right tail) less than or equal to q fail before success. The function R rgeom (n, size, prob) returns n random numbers from the geometric distribution x ~ geom (prob). The function R qgeom (p, prob, lower.tail) is the number of failures at the q percentile (lower.tail = TRUE).
 
@@ -25,7 +25,7 @@ Density, distribution function, quantile function and random generation for the 
 #### Value
 dgeom gives the density, pgeom gives the distribution function, qgeom gives the quantile function, and rgeom generates random deviates.s.
 
-### Graph grammar
+### <html><H3 align="center"> Graph grammar </H3></html>
 Generally speaking, R, in its basic version, includes functions to create graphics. However, these tools are quite limited in terms of the editing possibilities they include. All in all, they are valid for exploratory analysis use. That is, a use focused on the visualization of information that allows - within the context of an investigation process - to make decisions for subsequent statistical analyzes. After exploring these alternatives, the use of ggplot2 will be explored, a package specialized in graphic design that allows a better visualization of results, especially focused on the dissemination of research results.
 
 The ggplot2 package is an R package specialized in construction and design for data visualization. In this sense, it is a package whose functionalities go beyond a purely "scientific" or exploratory use and is oriented to the different dynamics of dissemination of results of research processes, this includes:
@@ -47,7 +47,7 @@ The ggplot2 package is an R package specialized in construction and design for d
 
 ---
 ## Homework 2
-### geom_jitter function
+### <html><H3 align="center"> geom_jitter function </H3></html>
 The jitter geom is a convenient shortcut for geom_point(position = "jitter"). It adds a small amount of random variation to the location of each point, and is a useful way of handling overplotting caused by discreteness in smaller datasets.
 
 #### Use
@@ -89,7 +89,7 @@ The jitter geom is a convenient shortcut for geom_point(position = "jitter"). It
 
 ---
 ## Homework 3
-### How do we understand the value of P
+### <html><H3 align="center"> How do we understand the value of P </H3></html>
 Understanding the p-value will really help you deepen your understanding of hypothesis testing in general. Before talking about what the p-value is, let's talk about what it is not.
 * The p-value is NOT the probability that the statement is true. Of course, this would be an amazing thing to know! Think about it: "There is a 10% chance that this drug will work." Unfortunately, this is not the case. Actually determining this probability would be really difficult, if not impossible!
 * The p-value is NOT the probability that the null hypothesis is true. Another one that seems so logical that it has to be correct! This is much closer to reality, but again it is too strong a statement.
@@ -100,7 +100,7 @@ A large p-value indicates that it would be quite normal to obtain a sample like 
 
 ---
 ## Homework 4
-### SplitRatio
+### <html><H3 align="center"> SplitRatio </H3></html>
 #### sample.spit
 ##### Split Data Into Test And Train Set
 Split data from vector Y into two sets in predefined ratio while preserving relative ratios of different labels in Y. Used to split the data used during classification into train and test subsets.
