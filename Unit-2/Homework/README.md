@@ -34,9 +34,9 @@ The ggplot2 package is an R package specialized in construction and design for d
 
 ##### Ggplot2 package grammar
 
-    1. En primer lugar, los objetos resultantes de la construcción de un gráfico no son una imagen sino un objeto de tipo gráfico específico. Esto permite configurar un gráfico como cualquier otro elemento de R, directamente desde la sintaxis,
-    2. Debido a lo anterior, la editabilidad de los gráficos construidos es mayor. Definiendo el conjunto de información para visualizar, se pueden configurar diferentes tipos de gráficos.
-    3. En el tercer lugar, puede indicar que la estructura de este paquete presenta una gramática específica en relación a sus sintaxis. Como veremos a continuación, su sintaxis guarda directa relación con tres elementos que componen la estructura de cualquier visualización de datos: la información (datos) a utilizar, la estética (estética) o la definición de los ejes donde se posicionan los datos a visualizar, y la geometría (geometría) o los elementos visuales que se posicionan en la gráfica para representar los datos que interesa visualizar.
+    1. First, the objects resulting from the construction of a graph are not an image but an object of a specific graphical type. This allows you to configure a graphic like any other R element, directly from the syntax,
+    2. Due to the above, the editability of the constructed graphics is greater. By defining the set of information to display, you can configure different types of charts.
+    3. In the third place, you can indicate that the structure of this package presents a specific grammar in relation to its syntax. As we will see below, its syntax is directly related to three elements that make up the structure of any data visualization: the information (data) to be used, the aesthetics (aesthetics) or the definition of the axes where the data to be displayed is positioned, and the geometry (geometry) or the visual elements that are positioned on the graph to represent the data that is interesting to visualize.
 
 ##### Elements that make up a graph built using the ggplot function.
 
