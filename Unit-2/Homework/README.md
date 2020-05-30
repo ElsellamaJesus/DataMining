@@ -285,3 +285,15 @@ This method is very interesting, how it locates the 3D joints of the human body 
 ---
 ## Homework optional
 ### <html><H3 align="center"> Update R </H3></html>
+In this way, it is enough that we have at hand a script similar to the one shown below, and we proceed to execute it when a new version of R is announced:
+    install.packages("installr")
+    library(installr)
+    updateR()
+When using the updateR () function:
+* It is checked which is the latest version of R. If we are up to date, it will show us a confirmation window of this fact. Otherwise, it will give us the possibility of consulting the news of said version and will allow us to proceed with its download and installation.
+* Once the process is complete, it will ask us if we want to move (and delete) the libraries from our old version to the new one. In addition, it will give us the option to update them. Depending on the number of libraries we have installed, completing these actions can take a long time.
+
+Finally, we can save ourselves the succession of pop-up windows if we know in advance that we want to update R, move (not copy) the libraries and update them. To do this, we rewrite the previous script as follows:
+    if(!require(installr)) {install.packages("installr"); require(installr)} 
+    updateR(F, T, T, F, T, F, T)
+---
