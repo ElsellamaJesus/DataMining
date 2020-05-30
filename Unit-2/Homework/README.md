@@ -181,49 +181,49 @@ glm is used to fit generalized linear models, specified by a symbolic descriptio
 #### Arguments
 
 * ##### Formula
-An object of the "formula" class (or one that can be coerced to that class): a symbolic description of the model to be adjusted. Details of the model specification are given in "Details".
+    An object of the "formula" class (or one that can be coerced to that class): a symbolic description of the model to be adjusted. Details of the model specification are given in "Details".
 * ##### Familia
-A description of the error distribution and binding function to be used in the model. For glm, this can be a character string that names a familiar function, a familiar function, or the result of a call to a familiar function. For glm.fit only the third option is supported. (See family for details of family functions).
+    A description of the error distribution and binding function to be used in the model. For glm, this can be a character string that names a familiar function, a familiar function, or the result of a call to a familiar function. For glm.fit only the third option is supported. (See family for details of family functions).
 * ##### Data
-An optional data frame, list, or environment (or object coerdable by as.data.frame to a data frame) that contains the variables in the model. If not found in the data, the variables are taken from the environment (formula), usually the environment from which glm is called.
+    An optional data frame, list, or environment (or object coerdable by as.data.frame to a data frame) that contains the variables in the model. If not found in the data, the variables are taken from the environment (formula), usually the environment from which glm is called.
 * ##### Weights
-An optional vector of "preweights" to be used in the adaptation process. Must be NULL or a numeric vector.
-subset
-An optional vector that specifies a subset of observations to be used in the adaptation process.
+    An optional vector of "preweights" to be used in the adaptation process. Must be NULL or a numeric vector.
+* ##### subset
+    An optional vector that specifies a subset of observations to be used in the adaptation process.
 * ##### na.action
-A function that indicates what should happen when the data contains NA. The default value is set by setting options na.action, and is na.fail if not configured. The default "factory-fresh" is na.omit. Another possible value is NULL, there is no action. The na.exclude value can be useful.
+    A function that indicates what should happen when the data contains NA. The default value is set by setting options na.action, and is na.fail if not configured. The default "factory-fresh" is na.omit. Another possible value is NULL, there is no action. The na.exclude value can be useful.
 * ##### start
-Initial values ​​for the parameters in the linear predictor.
+    Initial values ​​for the parameters in the linear predictor.
 * ##### etastart
-initial values ​​for the linear predictor.
+    initial values ​​for the linear predictor.
 * ##### mustart
-initial values ​​for the mean vector.
+    initial values ​​for the mean vector.
 * ##### offset
-This can be used to specify a known component a priori to be included in the linear predictor during tuning. This should be NULL or a numeric vector or array of extensions that match the ones in the answer. Instead, one or more displacement terms can be included in the formula or also, and if more than one is specified, its sum is used.
+    This can be used to specify a known component a priori to be included in the linear predictor during tuning. This should be NULL or a numeric vector or array of extensions that match the ones in the answer. Instead, one or more displacement terms can be included in the formula or also, and if more than one is specified, its sum is used.
 * ##### control
-A list of parameters to control the adjustment process. For glm.fit this is passed to glm.control.
+    A list of parameters to control the adjustment process. For glm.fit this is passed to glm.control.
 * ##### model
-A logical value that indicates whether the model frame should be included as a component of the return value.
+    A logical value that indicates whether the model frame should be included as a component of the return value.
 * ##### method
-The method that will be used to fit the model. The default method "glm.fit" uses iteratively weighted least squares (IWLS): the alternative "model.frame" returns the frame of the model and does not wrap.
-User-supplied wrap functions can be supplied as a function or a character string that names a function, with a function that takes the same arguments as glm.fit. If specified as a character string, it is searched from the statistics namespace.
+    The method that will be used to fit the model. The default method "glm.fit" uses iteratively weighted least squares (IWLS): the alternative "model.frame" returns the frame of the model and does not wrap.
+    User-supplied wrap functions can be supplied as a function or a character string that names a function, with a function that takes the same arguments as glm.fit. If specified as a character string, it is searched from the statistics namespace.
 * ##### x, y
-For glm: logical values ​​that indicate whether the response vector and model matrix used in the fitting process should be returned as components of the returned value.
+    For glm: logical values ​​that indicate whether the response vector and model matrix used in the fitting process should be returned as components of the returned value.
 
-For glm.fit: x is a design matrix of dimension n * p, and y is a vector of observations of length n.
+    For glm.fit: x is a design matrix of dimension n * p, and y is a vector of observations of length n.
 * ##### singular.ok
-logical; if it is FALSE, a singular setting is an error.
+    logical; if it is FALSE, a singular setting is an error.
 * ##### contrasts
-An optional list. See the contrasts.arg of model.matrix.default.
+    An optional list. See the contrasts.arg of model.matrix.default.
 * ##### intercept
-logical. Should an intersection be included in the null model?
+    logical. Should an intersection be included in the null model?
 * ##### object
-An object that inherits from the "glm" class.
+    An object that inherits from the "glm" class.
 * ##### type
-Character, partial match allowed. Type of weights to extract from the adjusted model object. It can be abbreviated.
+    Character, partial match allowed. Type of weights to extract from the adjusted model object. It can be abbreviated.
 * ##### …
-For glm: arguments to be used to form the default control argument if not supplied directly.
-For weights: more arguments passed to or from other methods.
+    For glm: arguments to be used to form the default control argument if not supplied directly.
+    For weights: more arguments passed to or from other methods.
 
 #### Value
 glm returns a class object inherited from "glm" that inherits from the class "lm". See later in this section. If a non-standard method is used, the object will also inherit from the class (if any) returned by that function.
@@ -249,7 +249,7 @@ It could give us an error message because it cannot find the ‘ElemStatLearn’
 
 #### Some functions in ElemStatLearn
 
-| Nombre |Descripción |
+| Name |Description |
 | --- | --- |
 | waveform | Function to simulate waveform data |
 | phoneme | Data from a continuous acoustic-phonetic corpus |
