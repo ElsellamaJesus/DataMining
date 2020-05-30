@@ -156,6 +156,9 @@ lm is used to fit linear models. It can be used to carry out regression, single 
 * ##### …
     additional arguments to be passed to the low level regression fitting functions (see below).
 
+#### Value
+lm returns an object of class "lm" or for multiple responses of class c("mlm", "lm").
+The functions summary and anova are used to obtain and print a summary and analysis of variance table of the results. The generic accessor functions coefficients, effects, fitted.values and residuals extract various useful features of the value returned by lm.
 
 
 
