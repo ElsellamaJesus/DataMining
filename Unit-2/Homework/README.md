@@ -1,7 +1,7 @@
 # Homework
 ---
 ## Homework 1
-### Geometric distribution
+###                     Geometric distribution
 #### R functions dgeom, pgeom, qgeom y rgeom.
 The function R dgeom (x, prob) is the probability of x failures before the first success (observe the difference) when the probability of success is prob. The function R pgeom (q, prob, lower.tail) is the cumulative probability (lower.tail = TRUE for the left tail, lower.tail = FALSE for the right tail) less than or equal to q fail before success. The function R rgeom (n, size, prob) returns n random numbers from the geometric distribution x ~ geom (prob). The function R qgeom (p, prob, lower.tail) is the number of failures at the q percentile (lower.tail = TRUE).
 
@@ -25,7 +25,7 @@ Density, distribution function, quantile function and random generation for the 
 #### Value
 dgeom gives the density, pgeom gives the distribution function, qgeom gives the quantile function, and rgeom generates random deviates.s.
 
-### Graph grammar
+###                     Graph grammar
 Generally speaking, R, in its basic version, includes functions to create graphics. However, these tools are quite limited in terms of the editing possibilities they include. All in all, they are valid for exploratory analysis use. That is, a use focused on the visualization of information that allows - within the context of an investigation process - to make decisions for subsequent statistical analyzes. After exploring these alternatives, the use of ggplot2 will be explored, a package specialized in graphic design that allows a better visualization of results, especially focused on the dissemination of research results.
 
 The ggplot2 package is an R package specialized in construction and design for data visualization. In this sense, it is a package whose functionalities go beyond a purely "scientific" or exploratory use and is oriented to the different dynamics of dissemination of results of research processes, this includes:
@@ -47,7 +47,7 @@ The ggplot2 package is an R package specialized in construction and design for d
 
 ---
 ## Homework 2
-### geom_jitter function
+###                     geom_jitter function
 The jitter geom is a convenient shortcut for geom_point(position = "jitter"). It adds a small amount of random variation to the location of each point, and is a useful way of handling overplotting caused by discreteness in smaller datasets.
 
 #### Use
@@ -66,30 +66,30 @@ The jitter geom is a convenient shortcut for geom_point(position = "jitter"). It
 
 #### Arguments
 * ##### Mapping
-Set of aesthetic mappings created by aes() or aes_(). If specified and inherit.aes = TRUE (the default), it is combined with the default mapping at the top level of the plot. You must supply mapping if there is no plot mapping.
+    Set of aesthetic mappings created by aes() or aes_(). If specified and inherit.aes = TRUE (the default), it is combined with the default mapping at the top level of the plot. You must supply mapping if there is no plot mapping.
 * ##### Data
-The data to be displayed in this layer. There are three options:
-If NULL, the default, the data is inherited from the plot data as specified in the call to ggplot().
-A data.frame, or other object, will override the plot data. All objects will be fortified to produce a data frame. See fortify() for which variables will be created.
-A function will be called with a single argument, the plot data. The return value must be a data.frame, and will be used as the layer data. A function can be created from a formula (e.g. ~ head(.x, 10))..
+    -The data to be displayed in this layer. There are three options:
+    -If NULL, the default, the data is inherited from the plot data as specified in the call to ggplot().
+    -A data.frame, or other object, will override the plot data. All objects will be fortified to produce a data frame. See fortify() for which variables will be created.
+    -A function will be called with a single argument, the plot data. The return value must be a data.frame, and will be used as the layer data. A function can be created from a formula (e.g. ~ head(.x, 10))..
 * ##### Stat
-The statistical transformation to use on the data for this layer, as a string.
+    The statistical transformation to use on the data for this layer, as a string.
 * ##### Position
-Position adjustment, either as a string, or the result of a call to a position adjustment function.
+    Position adjustment, either as a string, or the result of a call to a position adjustment function.
 * ##### Width
-Amount of vertical and horizontal jitter. The jitter is added in both positive and negative directions, so the total spread is twice the value specified here.
+    Amount of vertical and horizontal jitter. The jitter is added in both positive and negative directions, so the total spread is twice the value specified here.
 * ##### Height
-Amount of vertical and horizontal jitter. The jitter is added in both positive and negative directions, so the total spread is twice the value specified here.
+    Amount of vertical and horizontal jitter. The jitter is added in both positive and negative directions, so the total spread is twice the value specified here.
 * ##### na.rm
-If FALSE, the default, missing values are removed with a warning. If TRUE, missing values are silently removed.
+    If FALSE, the default, missing values are removed with a warning. If TRUE, missing values are silently removed.
 * ##### Show.legend
-logical. Should this layer be included in the legends? NA, the default, includes if any aesthetics are mapped. FALSE never includes, and TRUE always includes. It can also be a named logical vector to finely select the aesthetics to display.
+    logical. Should this layer be included in the legends? NA, the default, includes if any aesthetics are mapped. FALSE never includes, and TRUE always includes. It can also be a named logical vector to finely select the aesthetics to display.
 * ##### inherit.aes (heredar.aes)
-If FALSE, overrides the default aesthetics, rather than combining with them. This is most useful for helper functions that define both data and aesthetics and shouldn't inherit behaviour from the default plot specification, e.g. borders().
+    If FALSE, overrides the default aesthetics, rather than combining with them. This is most useful for helper functions that define both data and aesthetics and shouldn't inherit behaviour from the default plot specification, e.g. borders().
 
 ---
 ## Homework 3
-### How do we understand the value of P
+###                     How do we understand the value of P
 Understanding the p-value will really help you deepen your understanding of hypothesis testing in general. Before talking about what the p-value is, let's talk about what it is not.
 * The p-value is NOT the probability that the statement is true. Of course, this would be an amazing thing to know! Think about it: "There is a 10% chance that this drug will work." Unfortunately, this is not the case. Actually determining this probability would be really difficult, if not impossible!
 * The p-value is NOT the probability that the null hypothesis is true. Another one that seems so logical that it has to be correct! This is much closer to reality, but again it is too strong a statement.
@@ -100,7 +100,7 @@ A large p-value indicates that it would be quite normal to obtain a sample like 
 
 ---
 ## Homework 4
-### SplitRatio
+###                     SplitRatio
 #### sample.spit
 ##### Split Data Into Test And Train Set
 Split data from vector Y into two sets in predefined ratio while preserving relative ratios of different labels in Y. Used to split the data used during classification into train and test subsets.
@@ -110,24 +110,20 @@ Split data from vector Y into two sets in predefined ratio while preserving rela
 
 #### Arguments
 * ##### y  
-Vector of data labels. If there are only a few labels (as is expected) than relative ratio of data in both subsets will be the same.
-
+    Vector of data labels. If there are only a few labels (as is expected) than relative ratio of data in both subsets will be the same.
 * ##### SplitRatio
-Splitting ratio:
-    if (0<=splitratio<1)< code=""> then SplitRatio fraction of points from Y will be set toTRUE
-    if (SplitRatio==1) then one random point from Y will be set to TRUE
-    if (SplitRatio>1) then SplitRatio number of points from Y will be set to TRUE
-
+    Splitting ratio:
+        if (0<=splitratio<1)< code=""> then SplitRatio fraction of points from Y will be set toTRUE
+        if (SplitRatio==1) then one random point from Y will be set to TRUE
+        if (SplitRatio>1) then SplitRatio number of points from Y will be set to TRUE
 * ##### group
-Optional vector/list used when multiple copies of each sample are present. In such a case group contains unique sample labels, marking all copies of the same sample with the same label, and the function tries to place all copies in either train or test subset. If provided than has to have the same length as Y.
-
+    Optional vector/list used when multiple copies of each sample are present. In such a case group contains unique sample labels, marking all copies of the same sample with the same label, and the function tries to place all copies in either train or test subset. If provided than has to have the same length as Y.
 * #### Details
-Function msc.sample.split is the old name of the sample.split function. To be retired soon.
-
+    Function msc.sample.split is the old name of the sample.split function. To be retired soon.
 * #### Value
-SplitRatio*length(Y) elements set to TRUE.
+    SplitRatio*length(Y) elements set to TRUE.
 
-### lm
+###                     lm
 #### Fitting Linear Models
 lm is used to fit linear models. It can be used to carry out regression, single stratum analysis of variance and analysis of covariance (although aov may provide a more convenient interface for these).
 
@@ -138,23 +134,23 @@ lm is used to fit linear models. It can be used to carry out regression, single 
 
 #### Argumentos
 * ##### formula
-an object of class "formula" (or one that can be coerced to that class): a symbolic description of the model to be fitted. The details of model specification are given under ‘Details’.
+    an object of class "formula" (or one that can be coerced to that class): a symbolic description of the model to be fitted. The details of model specification are given under ‘Details’.
 * ##### data
-an optional data frame, list or environment (or object coercible by as.data.frame to a data frame) containing the variables in the model. If not found in data, the variables are taken from environment(formula), typically the environment from which lm is called.
+    an optional data frame, list or environment (or object coercible by as.data.frame to a data frame) containing the variables in the model. If not found in data, the variables are taken from environment(formula), typically the environment from which lm is called.
 * ##### subset
-an optional vector specifying a subset of observations to be used in the fitting process.
+    an optional vector specifying a subset of observations to be used in the fitting process.
 * ##### weights
-an optional vector of weights to be used in the fitting process. Should be NULL or a numeric vector. If non-NULL, weighted least squares is used with weights weights (that is, minimizing sum(w*e^2)); otherwise ordinary least squares is used. See also ‘Details’,
+    an optional vector of weights to be used in the fitting process. Should be NULL or a numeric vector. If non-NULL, weighted least squares is used with weights weights (that is, minimizing sum(w*e^2)); otherwise ordinary least squares is used. See also ‘Details’,
 * ##### na.action
-a function which indicates what should happen when the data contain NAs. The default is set by the na.action setting of options, and is na.fail if that is unset. The ‘factory-fresh’ default is na.omit. Another possible value is NULL, no action. Value na.exclude can be useful.
+    a function which indicates what should happen when the data contain NAs. The default is set by the na.action setting of options, and is na.fail if that is unset. The ‘factory-fresh’ default is na.omit. Another possible value is NULL, no action. Value na.exclude can be useful.
 * ##### method
-the method to be used; for fitting, currently only method = "qr" is supported; method = "model.frame" returns the model frame (the same as with model = TRUE, see below).
+    the method to be used; for fitting, currently only method = "qr" is supported; method = "model.frame" returns the model frame (the same as with model = TRUE, see below).
 * ##### model, x, y, qr
-logicals. If TRUE the corresponding components of the fit (the model frame, the model matrix, the response, the QR decomposition) are returned.
+    logicals. If TRUE the corresponding components of the fit (the model frame, the model matrix, the response, the QR decomposition) are returned.
 * ##### singular.ok
-logical. If FALSE (the default in S but not in R) a singular fit is an error.
+    logical. If FALSE (the default in S but not in R) a singular fit is an error.
 * ##### contrasts
-an optional list. See the contrasts.arg of model.matrix.default.
+    an optional list. See the contrasts.arg of model.matrix.default.
 * ##### offset
     this can be used to specify an a priori known component to be included in the linear predictor during fitting. This should be NULL or a numeric vector or matrix of extents matching those of the response. One or more offset terms can be included in the formula instead or as well, and if more than one are specified their sum is used. See model.offset.
 * ##### …
