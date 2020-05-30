@@ -296,4 +296,5 @@ When using the updateR () function:
 Finally, we can save ourselves the succession of pop-up windows if we know in advance that we want to update R, move (not copy) the libraries and update them. To do this, we rewrite the previous script as follows:
     if(!require(installr)) {install.packages("installr"); require(installr)} 
     updateR(F, T, T, F, T, F, T)
+    
 ---
