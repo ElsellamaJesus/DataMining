@@ -141,3 +141,39 @@ F-statistic: 450.8 on 2 and 47 DF,  p-value: < 2.2e-16
 **Analysis.** We see that our Multiple R-Squared is 95% is high, which means that our model fits well to the real data, since it is almost 100%. Our P value is very close to 0, it could indicate that there is a significant difference between the data sets, although it is striking that it is so small.
 
 ---
+## Practice 3
+### <html><H3 align="center"> Backward Elimination </H3></html>
+#### Code R
+```R
+# Homework analise the follow atomation backwardElimination function 
+backwardElimination <- function(x, sl) {
+  #We set the length of the vector of R to be "x".
+  numVars = length(x).
+  #We create a cycle for the vector.
+  for (i in c(1:numVars)){
+    #Linear regression fit
+    regressor = lm(formula = Profit ~ ., data = x)
+    #The coefficients of the objects are extracted
+    #Pr (> | t |) "will give us the value p, it is related to the probability of
+    #observing any value equal to or greater than t.
+    maxVar = max(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"])
+    #A condition is added
+    if (maxVar > sl){
+      j = which(coef(summary(regressor))[c(2:numVars), "Pr(>|t|)"] == maxVar)
+      x = x[, -j]
+    }
+    #Subtract one from the vector numVars
+    numVars = numVars - 1
+  }
+  #Return linear regression
+  return(summary(regressor))
+}
+SL = 0.05
+#dataset = dataset[, c(1,2,3,4,5)]
+training_set
+backwardElimination(training_set, SL)
+```
+---
+## Practice 4
+### <html><H3 align="center"> Logistic Regression </H3></html>
+#### Code R
