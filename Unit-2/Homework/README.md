@@ -262,5 +262,15 @@ It could give us an error message because it cannot find the ‘ElemStatLearn’
 | zip2image | Function to convert zip file row to format used by image () |
 | ozone | Ozone data |
 
+---
+## Homework 7
+### <html><H3 align="center"> Real-Time Human Pose Recognition in Parts from Single Depth Images </H3></html>
+It is a method to quickly and accurately predict the 3D positions of the joints of the human body, from depth images that have been progressing a lot in recent years, through pixels in a depth image, where The scene is calibrated, in kinect being a depth camera, it was at 30 frames per second and with an image resolution of 640x480. The depth cameras have several advantages over the traditional ones, it has intensity sensors, it works with low light levels. But the main objective of this is to synthesize realistic depth images of people and thus have a large set of training data.
+Although the human body has a wide variety of poses that are difficult to simulate, but with this new method with the wide and varied set of data available, it allows the invariable body parts to be estimated to pose, as well as the body, the clothes that are used, among other things.
+<html><div align="center"><img src="https://i.ibb.co/T02Xw0J/depth-image.png"></div></html>
+<html><div align="center">
+<p><i>We can see how this process is done, in the first part we have the depth image, the second how the body parts are divided, and the third the 3D points of the body joints, where they are located to predict movements.</i><p>
+</div></html>
 
+---
 
