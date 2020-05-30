@@ -119,9 +119,9 @@ Split data from vector Y into two sets in predefined ratio while preserving rela
 * ##### group
     Optional vector/list used when multiple copies of each sample are present. In such a case group contains unique sample labels, marking all copies of the same sample with the same label, and the function tries to place all copies in either train or test subset. If provided than has to have the same length as Y.
 #### Details
-    Function msc.sample.split is the old name of the sample.split function. To be retired soon.
+Function msc.sample.split is the old name of the sample.split function. To be retired soon.
 #### Value
-    SplitRatio*length(Y) elements set to TRUE.
+SplitRatio*length(Y) elements set to TRUE.
 
 ### <html><H3 align="center"> lm </H3></html>
 #### Fitting Linear Models
