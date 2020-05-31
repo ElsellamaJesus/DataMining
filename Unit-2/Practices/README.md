@@ -434,7 +434,7 @@ text(classifier, cex=0.6)
 ```
 #### Data visualization
 ##### Visualization the Training set result
-<html><div align="center"><img src="https://i.ibb.co/XC945zP/Decision-Tree-Classification-Training-set.png"></div></html>
+<html><div align="center"><img src="https://i.ibb.co/gjqhqKF/Decision-Tree-Classification-Training-set.png"></div></html>
 
 ##### Visualising the Test set results
 <html><div align="center"><img src="https://i.ibb.co/m9DNNsy/Decision-Tree-Classification-Test-set.png"></div></html>
