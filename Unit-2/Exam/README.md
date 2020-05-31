@@ -1,7 +1,6 @@
 # Exams
 ---
 ## Exam U2
-### <html><H3 align="center"> Geometric distribution </H3></html>
 #### Code R
 ```R
 #Directory
