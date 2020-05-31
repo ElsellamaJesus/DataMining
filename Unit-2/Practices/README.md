@@ -266,10 +266,93 @@ contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
-#### Visualización de los datos
+#### Data visualization
 ##### Visualization the Training set result
 <html><div align="center"><img src="https://i.ibb.co/KyqGJJ5/LR-Training-set.png"></div></html>
 
 ##### Visualising the Test set results
 <html><div align="center"><img src="https://i.ibb.co/j8fTHLb/LR-Test-set.png"></div></html>
 
+---
+## Practice 5
+### <html><H3 align="center"> Support Vector Machines </H3></html>
+#### Code R
+```R
+# Support Vector Machine (SVM)
+# Set our workspace
+getwd()
+setwd("C:/Users/Valdo/Documents/Practice 5")
+getwd()
+
+# Importing the dataset
+dataset = read.csv('DataCredit.csv')
+dataset = dataset[3:5]
+
+# Encoding the target feature as factor
+dataset$Married = factor(dataset$Married, levels = c(0, 1))
+
+# Splitting the dataset into the Training set and Test set
+# install.packages('caTools')
+library(caTools)
+set.seed(123)
+split = sample.split(dataset$Married, SplitRatio = 0.75)
+training_set = subset(dataset, split == TRUE)
+test_set = subset(dataset, split == FALSE)
+
+# Feature Scaling
+training_set[-3] = scale(training_set[-3])
+test_set[-3] = scale(test_set[-3])
+
+# Fitting SVM to the Training set
+# install.packages('e1071')
+library(e1071)
+classifier = svm(formula = Married ~ .,
+                 data = training_set,
+                 type = 'C-classification',
+                 kernel = 'polynomial')
+svm
+# Predicting the Test set results
+y_pred = predict(classifier, newdata = test_set[-3])
+y_pred
+# Making the Confusion Matrix
+cm = table(test_set[, 3], y_pred)
+cm
+# Visualising the Training set results
+library(ElemStatLearn)
+set = training_set
+X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
+X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+colnames(grid_set) = c('Age', 'Limit')
+y_grid = predict(classifier, newdata = grid_set)
+plot(set[, -3],
+     main = 'SVM (Training set)',
+     xlab = 'Age', ylab = 'Limit',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+
+# Visualising the Test set results
+library(ElemStatLearn)
+set = test_set
+X1 = seq(min(set[, 1]) - 1, max(set[, 1]) + 1, by = 0.01)
+X2 = seq(min(set[, 2]) - 1, max(set[, 2]) + 1, by = 0.01)
+grid_set = expand.grid(X1, X2)
+colnames(grid_set) = c('Age', 'Limit')
+y_grid = predict(classifier, newdata = grid_set)
+plot(set[, -3], main = 'SVM (Test set)',
+     xlab = 'Age', ylab = 'Limit',
+     xlim = range(X1), ylim = range(X2))
+contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
+points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
+points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
+```
+#### Data visualization
+##### Visualization the Training set result
+<html><div align="center"><img src="https://i.ibb.co/MkC3w87/SVM-Training-set.png"></div></html>
+
+##### Visualising the Test set results
+<html><div align="center"><img src="https://i.ibb.co/Tkyf8yb/SVM-Test-set.png"></div></html>
+A credit data data set will be used, where the fields of whether you are married, your credit limit and your age will be used. Changed core from linear to polynomial.
+---
