@@ -355,4 +355,5 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ##### Visualising the Test set results
 <html><div align="center"><img src="https://i.ibb.co/Tkyf8yb/SVM-Test-set.png"></div></html>
 A credit data data set will be used, where the fields of whether you are married, your credit limit and your age will be used. Changed core from linear to polynomial.
+
 ---
