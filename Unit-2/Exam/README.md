@@ -1,3 +1,9 @@
+# Exams
+---
+## Exam U2
+### <html><H3 align="center"> Geometric distribution </H3></html>
+#### Code R
+```R
 #Directory
 getwd()
 setwd("C:/Users/Valdo/Downloads/Compressed/ExamenU2")
@@ -32,7 +38,9 @@ m <- movies + geom_jitter(aes(color=Studio)) + geom_boxplot(size=0.1, alpha=0.8)
         plot.title = element_text(color = "Black",
                                   size = 2, hjust = 0.5))
 #Final plot
-m                         
+m
+```
+#### Data visualization
+<html><div align="center"><img src="https://i.ibb.co/6PvLVrY/Exam-U2.png"></div></html>
 
-
-                     
+---
