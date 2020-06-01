@@ -54,14 +54,14 @@ qplot(data = LE_1960, x = Fertility.Rate, y = Life.Expectancy,
 #### Análisis
 ##### Análisis por región
 * ##### 2013
-La esperanza de vida en 2013, principalmente es mayor en Asia y en Europa, en Africa es menor la tasa esperanza de vida es mucho menor en paises de Africa, casi todo se concentra en edades menores de 60, pero cuentan con mayor tasa de fertilidad que en otras regiones.
+Life expectancy in 2013, is mainly higher in Asia and in Europe, in Africa it is lower, the life expectancy rate is much lower in African countries, almost everything is concentrated in ages under 60, but they have a higher fertility rate. than in other regions.
 
 * ##### 1960
-En 1960 la esperanza de vida mayor era en Europa principalmente, asi cómo en Asia,
-#siendo las dos regiones con mayor esperanza de vida. Africa siendo la región con mayor tasa de fertilidad, pero con poca esperanza de vida. América, manteniendo su tasa de esperanza de vida, en niveles medios, de entre 50 a 60 años.
+In 1960 the longest life expectancy was mainly in Europe, as well as in Asia,
+#being the two regions with the highest life expectancy. Africa being the region with the highest fertility rate, but with little life expectancy. America, maintaining its average life expectancy rate between 50 to 60 years.
 
-* ##### Análisis comparativo
-En comparación de los años 1960 a 2013, se mantuvieron con una tasa mayor de esperanza de vida, Asia y Europa. Africa manteniéndose con la menor tasa de esperanza de vida, a pesar de los años transcurridos, asì como también su fertilidad es alta en ambos periodos de años.
+* ##### Comparative analysis
+Compared from the years 1960 to 2013, they were maintained with a higher rate of life expectancy, Asia and Europe. Africa maintaining itself with the lowest rate of life expectancy, despite the years that have passed, as well as its fertility is high in both periods of years.
 
-* ##### Análisis por pais
-Es complicado analizar tantos datos, dado que muchos colores eran iguales e impedían un analisis adecuado.
+* ##### Analysis by country
+It is difficult to analyze so much data, since many colors were the same and prevented proper analysis.
