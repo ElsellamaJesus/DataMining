@@ -56,6 +56,6 @@ In the box plot analysis, we can notice notifications that the data was segmente
 
 * Finally, the "drama" genre presents the smallest box of the group and the least amount of data, although its midpoint is in a good position, so if invited it can become profitable.
 
-In conclusion with the graph, we can define the genre "comedy" genres higher gains obtained scattered results, but the genre "action" has a greater amount and concentration of data which makes it a stable option.
-Therefore, we are facing a question of quality and quantity. Which may indicate that "action" raises less profit because its initial investment is greater and "comedy" when investing less expectations, generates greater profits.
+In conclusion with the graph, we can define the genre "comedy" genres higher gains obtained scattered results, but the genre "action" has a greater amount and concentration of data which makes it a stable option. Therefore, we are facing a question of quality and quantity. Which may indicate that "action" raises less profit because its initial investment is greater and "comedy" when investing less expectations, generates greater profits.
+
 ---
