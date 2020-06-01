@@ -62,8 +62,8 @@ qplot(data = LE_1960, x = Fertility.Rate, y = Life.Expectancy,
 ##### Country 2013
 <html><div align="center"><img src="https://i.ibb.co/p25bdsb/P1960.png"></div></html>
 
-#### Análisis
-* ##### Análisis por región
+#### Analysis
+* ##### Analysis by region
 ##### 2013
 Life expectancy in 2013, is mainly higher in Asia and in Europe, in Africa it is lower, the life expectancy rate is much lower in African countries, almost everything is concentrated in ages under 60, but they have a higher fertility rate. than in other regions.
 
