@@ -1,3 +1,7 @@
+# Exams
+### <html><H2 align="center"> Exam U1 </H2></html>
+#### Code R
+
 ```R
 #Execute below code to generate three new vectors
 Country_Code <- c("ABW","AFG","AGO","ALB","ARE","ARG","ARM","ATG","AUS","AUT","AZE","BDI","BEL","BEN","BFA","BGD","BGR","BHR","BHS","BIH","BLR","BLZ","BOL","BRA","BRB","BRN","BTN","BWA","CAF","CAN","CHE","CHL","CHN","CIV","CMR","COG","COL","COM","CPV","CRI","CUB","CYP","CZE","DEU","DJI","DNK","DOM","DZA","ECU","EGY","ERI","ESP","EST","ETH","FIN","FJI","FRA","FSM","GAB","GBR","GEO","GHA","GIN","GMB","GNB","GNQ","GRC","GRD","GTM","GUM","GUY","HKG","HND","HRV","HTI","HUN","IDN","IND","IRL","IRN","IRQ","ISL","ITA","JAM","JOR","JPN","KAZ","KEN","KGZ","KHM","KIR","KOR","KWT","LAO","LBN","LBR","LBY","LCA","LKA","LSO","LTU","LUX","LVA","MAC","MAR","MDA","MDG","MDV","MEX","MKD","MLI","MLT","MMR","MNE","MNG","MOZ","MRT","MUS","MWI","MYS","NAM","NCL","NER","NGA","NIC","NLD","NOR","NPL","NZL","OMN","PAK","PAN","PER","PHL","PNG","POL","PRI","PRT","PRY","PYF","QAT","ROU","RUS","RWA","SAU","SDN","SEN","SGP","SLB","SLE","SLV","SOM","SSD","STP","SUR","SVK","SVN","SWE","SWZ","SYR","TCD","TGO","THA","TJK","TKM","TLS","TON","TTO","TUN","TUR","TZA","UGA","UKR","URY","USA","UZB","VCT","VEN","VIR","VNM","VUT","WSM","YEM","ZAF","COD","ZMB","ZWE")
@@ -49,15 +53,15 @@ qplot(data = LE_1960, x = Fertility.Rate, y = Life.Expectancy,
 
 #### Análisis
 ##### Análisis por región
-##### 2013
+* ##### 2013
 La esperanza de vida en 2013, principalmente es mayor en Asia y en Europa, en Africa es menor la tasa esperanza de vida es mucho menor en paises de Africa, casi todo se concentra en edades menores de 60, pero cuentan con mayor tasa de fertilidad que en otras regiones.
 
-##### 1960
+* ##### 1960
 En 1960 la esperanza de vida mayor era en Europa principalmente, asi cómo en Asia,
 #siendo las dos regiones con mayor esperanza de vida. Africa siendo la región con mayor tasa de fertilidad, pero con poca esperanza de vida. América, manteniendo su tasa de esperanza de vida, en niveles medios, de entre 50 a 60 años.
 
-##### Análisis comparativo
+* ##### Análisis comparativo
 En comparación de los años 1960 a 2013, se mantuvieron con una tasa mayor de esperanza de vida, Asia y Europa. Africa manteniéndose con la menor tasa de esperanza de vida, a pesar de los años transcurridos, asì como también su fertilidad es alta en ambos periodos de años.
 
-##### Análisis por pais
+* ##### Análisis por pais
 Es complicado analizar tantos datos, dado que muchos colores eran iguales e impedían un analisis adecuado.
