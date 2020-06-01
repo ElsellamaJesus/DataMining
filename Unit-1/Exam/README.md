@@ -50,6 +50,17 @@ qplot(data = LE_1960, x = Fertility.Rate, y = Life.Expectancy,
 
 ```
 #### Resultados
+##### Region 1960
+<html><div align="center"><img src="https://i.ibb.co/NSqQwSB/R1960.png"></div></html>
+
+##### Region 2013
+<html><div align="center"><img src="https://i.ibb.co/frLYSpx/R2013.png"></div></html>
+
+##### Country 1960
+<html><div align="center"><img src="https://i.ibb.co/DpffxqD/P2013.png"></div></html>
+
+##### Country 2013
+<html><div align="center"><img src="https://i.ibb.co/p25bdsb/P1960.png"></div></html>
 
 #### Análisis
 * ##### Análisis por región
