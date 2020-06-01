@@ -38,6 +38,10 @@ m <- movies + geom_jitter(aes(color=Studio)) + geom_boxplot(size=0.1, alpha=0.8)
 #Final plot
 m
 ```
+
+#### Data visualization
+<html><div align="center"><img src="https://i.ibb.co/6PvLVrY/Exam-U2.png"></div></html>
+
 #### Analysis
 Analysis
 In the box plot analysis, we can notice notifications that the data was segmented into 5 movie genres and 6 studies.
@@ -54,8 +58,4 @@ In the box plot analysis, we can notice notifications that the data was segmente
 
 In conclusion with the graph, we can define the genre "comedy" genres higher gains obtained scattered results, but the genre "action" has a greater amount and concentration of data which makes it a stable option.
 Therefore, we are facing a question of quality and quantity. Which may indicate that "action" raises less profit because its initial investment is greater and "comedy" when investing less expectations, generates greater profits.
-
-#### Data visualization
-<html><div align="center"><img src="https://i.ibb.co/6PvLVrY/Exam-U2.png"></div></html>
-
 ---
