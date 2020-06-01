@@ -52,11 +52,11 @@ qplot(data = LE_1960, x = Fertility.Rate, y = Life.Expectancy,
 #### Resultados
 
 #### Análisis
-##### Análisis por región
-* ##### 2013
+* ##### Análisis por región
+##### 2013
 Life expectancy in 2013, is mainly higher in Asia and in Europe, in Africa it is lower, the life expectancy rate is much lower in African countries, almost everything is concentrated in ages under 60, but they have a higher fertility rate. than in other regions.
 
-* ##### 1960
+##### 1960
 In 1960 the longest life expectancy was mainly in Europe, as well as in Asia,
 #being the two regions with the highest life expectancy. Africa being the region with the highest fertility rate, but with little life expectancy. America, maintaining its average life expectancy rate between 50 to 60 years.
 
