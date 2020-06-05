@@ -1,4 +1,4 @@
-# Support Vector Machine (SVM)
+# Naive Bayes
 # Set our workspace
 getwd()
 setwd("C:/Users/Valdo/Documents/GitHub/DataMining/Unit-2/Exam/ExamU3")
@@ -23,7 +23,7 @@ test_set = subset(dataset, split == FALSE)
 training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
 
-# Fitting NaiveBayes to the Training set
+# Fitting Naive Bayes to the Training set
 # install.packages('e1071')
 library(e1071)
 classifier = naiveBayes(x = training_set[,-3], 
@@ -49,6 +49,7 @@ y_pred
 # Making the Confusion Matrix
 cm = table(test_set[, 3], y_pred)
 cm
+
 # Visualising the Training set results
 library(ElemStatLearn)
 set = training_set
