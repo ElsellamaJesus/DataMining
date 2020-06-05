@@ -59,7 +59,7 @@ In the box plot analysis, we can notice notifications that the data was segmente
 In conclusion with the graph, we can define the genre "comedy" genres higher gains obtained scattered results, but the genre "action" has a greater amount and concentration of data which makes it a stable option. Therefore, we are facing a question of quality and quantity. Which may indicate that "action" raises less profit because its initial investment is greater and "comedy" when investing less expectations, generates greater profits.
 
 ---
-### <html><H2 align="center"> Exam U2 </H2></html>
+### <html><H2 align="center"> Exam U3 </H2></html>
 #### Code R
 ```R
 # Naive Bayes
@@ -133,5 +133,20 @@ contour(X1, X2, matrix(as.numeric(y_grid), length(X1), length(X2)), add = TRUE)
 points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
+#### Data visualization
+##### Plot Training_Set
+<html><div align="center"><img src="https://i.ibb.co/6yCwBgS/Naive-bayes-Training-set.png"></div></html>
 
+##### Plot Test_Set
+<html><div align="center"><img src="https://i.ibb.co/rMCXcv8/Naive-bayes-Test-set.png"></div></html>
+
+#### Analysis
+In the plot based on applications of previous models say SVM or KNN, we choose the same graph which consists of separating two attributes of an independent variable.
+In the plot a quantity of 400 data is required based on the data set "Social_Network_Ads.csv", we can see that the red color separation is for people who do not buy and the color separation is to buy, all this taking the people's age and estimated salary
+
+* ##### Training set
+In the plot of the training set, there were 75% giving an amount of 300 data to analysis, we appreciate that despite the data in denial (0) of red color they were more than the data that if they bought (1), the data of the green side seem to be on par because they are scattered. Regarding the amount of data in red, it can be deduced that there is a large concentration in ages below the average (37 years) and with a reduced salary. On the other hand, the amount of data outside its color is not so many in the total number of people evaluated, but we consider it as unusual or out of range data.
+
+* ##### Test equipment
+In the plot of the test set, there was 25% giving an amount of 100 data to analysis, unlike the training set, here the amount of data is similar. Like the training set, the situation of the great concentration continues to occur at below-average ages (approximately 30-40 years) and with a reduced salary.
 
