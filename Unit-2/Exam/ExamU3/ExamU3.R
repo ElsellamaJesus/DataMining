@@ -24,14 +24,23 @@ training_set[-3] = scale(training_set[-3])
 test_set[-3] = scale(test_set[-3])
 
 # Fitting NaiveBayes to the Training set
-# install.packages("naivebayes")
-# library(naivebayes)
-# model = naive_bayes(Class ~ ., data = dataset)
 # install.packages('e1071')
 library(e1071)
 classifier = naiveBayes(x = training_set[,-3], 
                         y = training_set$Purchased)
 naiveBayes
+
+"classifier = naiveBayes(formula = Purchased ~ .,
+                         data = training_set,
+                         type = 'C-classification',
+                         kernel = 'linear')
+naiveBayes"
+
+"classifier = naiveBayes(formula = Purchased ~ .,
+                         data = training_set,
+                         type = 'raw',
+                         laplace = '0')
+naiveBayes"
 
 # Predicting the Test set results
 y_pred = predict(classifier, newdata = test_set[-3])
