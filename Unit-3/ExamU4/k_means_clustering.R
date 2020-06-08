@@ -44,7 +44,7 @@ y_kmeans = kmeans$cluster
 
 #SEPAL
 set.seed(29)
-kmeans = kmeans(x = sepal, centers = 3)
+kmeans = kmeans(x = sepal, centers = 4)
 y_kmeans = kmeans$cluster
 
 # Visualising the clusters
