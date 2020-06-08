@@ -83,6 +83,10 @@ clusplot(sepal,
          ylab = 'Sepal Width')
 ```
 #### Data visualization
+##### Petal clusters
+<html><div align="center"><img src="https://i.ibb.co/2nFT1dh/Petal-clusters.png"></div></html>
 
+##### Sepal clusters
+<html><div align="center"><img src="https://i.ibb.co/cr9W9DW/Sepal-clusters.png"></div></html>
 
 #### Analysis
