@@ -1,7 +1,7 @@
 # K-Means Clustering
 # Set our workspace
 getwd()
-setwd("C:/Users/JS/Documents/DataMining/Examen")
+setwd("C:/Users/Valdo/Documents/GitHub/DataMining/Unit-3/ExamU4")
 getwd()
 
 # Importing the dataset
@@ -27,7 +27,7 @@ kmeans = kmeans(x = iris, centers = 3)
 y_kmeans = kmeans$cluster
 y_kmeans
 
-# Table of clusters that the algorithm K-means
+# K-means cluster table
 table(iris.species,kmeans$cluster,dnn=c("Species","Cluster"))
 
 # Visualize the clusters
@@ -39,7 +39,7 @@ library(cluster)
 clusplot(iris,
          y_kmeans,
          lines = 0,
-         shade = FALSE,
+         shade = TRUE,
          color = TRUE,
          labels = 4,
          plotchar = TRUE,

@@ -31,7 +31,7 @@ kmeans = kmeans(x = iris, centers = 3)
 y_kmeans = kmeans$cluster
 y_kmeans
 
-# Table of clusters that the algorithm K-means
+# K-means cluster table
 table(iris.species,kmeans$cluster,dnn=c("Species","Cluster"))
 
 # Visualize the clusters
@@ -43,7 +43,7 @@ library(cluster)
 clusplot(iris,
          y_kmeans,
          lines = 0,
-         shade = FALSE,
+         shade = TRUE,
          color = TRUE,
          labels = 4,
          plotchar = TRUE,
@@ -53,10 +53,10 @@ clusplot(iris,
 
 ```
 #### Data visualization
-##### Petal clusters
-<html><div align="center"><img src="https://i.ibb.co/2nFT1dh/Petal-clusters.png"></div></html>
+##### The elbow method
+<html><div align="center"><img src="https://i.ibb.co/0D8Hh2w/The-Elbow-Method.png"></div></html>
 
-##### Sepal clusters
-<html><div align="center"><img src="https://i.ibb.co/bmP19k3/Sepal-clusters.png"></div></html>
+##### Clusters of iris
+<html><div align="center"><img src="https://i.ibb.co/89QYLNW/Clusters-of-iris.png"></div></html>
 
 #### Analysis
