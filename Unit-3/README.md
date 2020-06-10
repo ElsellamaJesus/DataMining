@@ -66,9 +66,11 @@ The data set "iris.csv" is very popular in data analysis, its objective is to de
      According to the analysis of our graph in R, we could notice that the data in the distribution table of the groups does not exactly coincide with the graph, we conclude that they are needed due to the difficulty of the model.
      Taking into account the distribution of the data, the plot order was as follows:
 
-     Results of predominant species in cluster
-     Cluster 3 - Purple - setosa
-     Cluster 2 - Red - virginica
-     Cluster 1 - Blue - versicolor
+     #### Results of predominant species in cluster
+     | Cluster | Color | Specie |
+     | --- | --- | --- |
+     | 3 | Purple | setosa |
+     | 2 | Red | virginica |
+     | 1 | Blue | versicolor |
 
      Concluding with these results and based on the data set, the dimensions of the iris flower "virginica" and "versicolor" have an interference in the groups because the characteristics are similar given in these 2 flowers are different in terms of color but their Dimensions are very similar, so the software classifies some plants in the same cluster.
